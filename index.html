@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--Leonardo de Oliveira Figueiredo-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overwatch</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="sortcut icon" href="svg/logo-ov.svg" type="image/x-icon" />;
+
+</head>
+
+<body>
+    <!--======== LOADING ===========-->
+    <section class="bg-loader">
+        <svg style="width: 20%;" xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="-55 -50 150 150" xml:space="preserve">
+            <g id="logo-overwatch">
+                <path class="logo-overwatch" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M15.525 12.883A13.911 13.911 0 0 1 24 10c3.046 0 5.859.989 8.159 2.646L36 8.038C32.652 5.515 28.505 4 24 4c-4.707 0-9.032 1.645-12.452 4.376l3.977 4.507z M33 36l-8-8V15l3 8 9 9-4  4z M15 36l8-8V15l-3 8-9 9 4 4z M37.536 9.319l-3.839  4.606C36.344 16.474 38 20.044 38 24c0 7.72-6.28 14-14 14s-14-6.28-14-14c0-3.814 1.537-7.273 4.019-9.8l-3.972-4.502C6.323 13.333 4 18.397 4 24c0 11.028 8.972 20 20 20s20-8.972 20-20c0-5.805-2.501-11.024-6.464-14.681z"
+                    fill="#424242" stroke="#EDF1F7" stroke-width="0.5" />
+            </g>
+        </svg>
+    </section>
+
+    <!--======== HEADER ===========-->
+    <header>
+        <nav class="navbar">
+            <div class="nav-menu">
+                <div class="logo">
+                    <a href="#"><img style="max-width: 70px;" src="svg/logo-ov.png"  /></a>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link">Heróis</a></li>
+                    <li><a href="#" class="nav-link">Modos de Jogo</a></li>
+                </ul>
+            </div>
+            <div class="nav-social">
+                <img class="icon" src="svg/icon-facebook.svg"  /> 
+                <img clas="icon" src="svg/icon-instagram.svg" />
+                <img clas="icon" src="svg/icon-youtube.svg" />
+                <img clas="icon" src="svg/icon-twitter.svg" class="mr-2"  />
+            </div>
+            <div class="bx mr-3"></div>
+
+        </nav>
+    </header>
+
+    <!--======== BG-VIDEO ===========-->
+    <section class="bg-video">
+        <video class="video" preload="none" autoplay muted loop>
+            <source src="video/over.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!--======== CONTAINER ===========-->
+    <section class="container">
+        <div class="container-item-1">
+            <p class="px-1 item-1">
+                <img src="svg/over.png"  />
+            </p>
+
+            <p class="my-2 item-2">
+                Overwatch é um jogo de tiro em equipe que conta com um elenco diversificado de heróis poderosíssimos. Viaje pelo mundo, monte uma equipe e dispute objetivos em combates 6v6 de tirar o fôlego.
+            </p>
+            <p class="mt-1 flex item-3">
+                <span><a href="#" class="btn">Comprar Agora</a></span>
+                <span><a href="#" class="ml-2 btn-secondary" id="reverse">Assistir Trailer</a></span>
+            </p>
+            <!--LOGO PLATAFORMAS-->
+            <p class="mt-2 flex align-items-center item-4">
+                <img src="svg/ps.svg" class="w-auto" style="margin-right: 20px;cursor: pointer;" />
+                <img src="svg/xbox.svg" class="w-auto" style="margin-right: 20px;cursor: pointer; width: 30px; height: 30px;"  />
+                <img src="svg/blizz.png" class="w-auto" style="margin-right: 20px;cursor: pointer; width: 30px; height: 30px;" />
+                <img src="svg/switch-nintendo.svg" class="w-auto" style=" width: 30px; cursor: pointer;" />
+            </p>
+        </div>
+
+        <div class="container-item-2 item-5">
+            <div style="width: 90%; height: 800px;" class="js-tilt">
+                <img src="svg/tracer.png" class="overwatch"  />
+            </div>
+        </div>
+
+    </section>
+    
+    <!--========== JS ==========-->
+    <script src="js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <script>
+        $('.js-tilt').tilt({
+            perspective: 2200
+        });
+    </script>
+
+</body>
+
+</html>
